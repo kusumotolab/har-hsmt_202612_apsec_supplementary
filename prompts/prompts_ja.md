@@ -1,12 +1,20 @@
 # Prompts (Japanese)
 
-> **Note:** These are the Japanese prompts used in the experiments reported in the paper. For publication, the wording and notation have been edited for readability and consistency (e.g., unifying terms, punctuation, and typos) without changing the content of the instructions. An English translation is available in [prompts_en.md](prompts_en.md).
+> **Note:** These are the Japanese prompts used in the evaluation reported in the paper. For publication, the wording and notation have been edited for readability and consistency (e.g., unifying terms, punctuation, and typos) without changing the content of the instructions. An English translation is available in [prompts_en.md](prompts_en.md).
 
 - Text in 【】 (e.g., `【第一回議事録の内容】`) is a placeholder. The actual project data was inserted at these positions.
 - Category names have been replaced with `カテゴリ1` to `カテゴリ10` for confidentiality.
-- The prompts are input sequentially (Turn 1 → Turn 14) as a multi-turn conversation. See [prompts_en.md](prompts_en.md) for the execution order and terminology.
+- The system prompt is set at the beginning of the conversation, and the prompts are then input sequentially (Turn 1 → Turn 14) as a multi-turn conversation. See [prompts_en.md](prompts_en.md) for the execution order and terminology.
 
 ---
+
+## System Prompt
+
+```text
+あなたはソフトウェア要件定義とレビューの専門家です。
+これから、14個のプロンプトを順番に受け取ります。
+それぞれのプロンプトと、あなた自身の過去の回答をすべて踏まえて、一貫した回答をしてください。
+```
 
 ## Turn 1
 
